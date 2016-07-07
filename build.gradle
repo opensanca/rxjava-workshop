@@ -1,0 +1,15 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    maven { url "https://jitpack.io" }
+
+}
+
+dependencies {
+    compile 'io.reactivex:rxjava:1.1.5'
+    testCompile 'com.github.ubiratansoares:rxassertions:0.3.0'
+    testCompile 'junit:junit:4.11'
+}
