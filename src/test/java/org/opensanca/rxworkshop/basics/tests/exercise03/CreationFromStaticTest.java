@@ -1,8 +1,11 @@
 package org.opensanca.rxworkshop.basics.tests.exercise03;
 
 import org.junit.Test;
-import org.opensanca.rxworkshop.basics.exercise03.CreationAsStatic;
+import org.opensanca.rxworkshop.basics.exercise03.CreationAsStaticMethod;
 import rx.Observable;
+
+import java.util.Arrays;
+import java.util.List;
 
 import static br.ufs.github.rxassertions.RxAssertions.assertThat;
 
@@ -12,11 +15,20 @@ import static br.ufs.github.rxassertions.RxAssertions.assertThat;
 
 public class CreationFromStaticTest {
 
-    @Test public void withAssertions() {
+    @Test public void creationWithParameter() {
 
         String parameter = "Open Sanca";
-        Observable<String> create = CreationAsStatic.create(parameter);
+        Observable<String> create = CreationAsStaticMethod.fromParameter(parameter);
         assertThat(create).emits(parameter);
+
+    }
+
+    @Test public void creationWithCollection() {
+
+        List<String> openSancaFacts = Arrays.asList("Open", "Sanca", "Rules");
+
+        assertThat(CreationAsStaticMethod.fromCollection(openSancaFacts))
+                .expectedValues(openSancaFacts);
 
     }
 }
