@@ -1,4 +1,4 @@
-![RX Java](https://avatars3.githubusercontent.com/u/6407041)
+![RX Java](https://avatars3.githubusercontent.com/u/6407041?v=3&s=200)
 
 # Workshop RX Java com [Ubiratan Soares](https://github.com/ubiratansoares)
 
@@ -22,50 +22,38 @@ um licença por 12 meses para você, pode mandar foto de carteirinha do ano ante
 - b1) Se você possuir um e-mail com o dominio da universidade, basta colocar lá no formulário que chega dentro de 1 hora a licença no seu e-mail. 
 - c) Durante a trilha tem alguns amiguinhos "manolos" que podem lhe passar formas "alternativas" de como ter a licença. Abraços
 
-#### Mini-bio: 
-Ubiratan Soares é Engenheiro de Software, formado pela USP. Trabalha com mobilidade há mais de seis anos e é viciado em desenvolvimento 
-para Android, tendo participação diretamente em alguns dos maiores aplicativos nacionais hoje online. 
-Também é instrutor da Globalcode, co-organizador do GDG São Paulo, palestrante nos principais de eventos de tecnologia do país, 
-pai e filósofo wanna-be. Faz parte do programa Google Developer Experts para Android, bem como da iniciativa da Intel Software Innovator
-para Android.. 
 
-Follow me: Linkedin | Site 
+#### EMENTA
 
+##### Básico de Observables e Observers
 
+- -> Exercício 01 : Criar Observables com just( ) (consumir com Action)
+- -> Exercício 02 : Criar Observables com from( ) (consumir com Action)
+- -> Exercício 03 : Criar Observables com fromCallable( ) (consumir com Observer)
+- -> Exercício 04 : Criar Observables com factory method (Range)
 
+#####  Operadores e Marble Diagrams
 
+- -> Exercício 05 : map( )
+- -> Exercício 06 : filter( )
+- -> Exercício 07 : reduce( )
+- -> Exercício 08 : collect( )
+- -> Exercício 09 : amb( )
+- -> Exercício 10 : take( )
+- -> Exercício 11 : concat( )
+- -> Exercício 12 : merge( )
+- -> Exercício 13 : flatmap( )
 
-### EMENTA
+#####  Schedulers
 
+- -> Exercício 14 : subscribeOn()
+- -> Exercício 15 : subscribeOn() + observeOn()
+- -> Exercício 16 : operador interval( )
 
-// Básico de Observables e Observers
+#####  STAR WARS REST API
 
--> Exercício 01 : Criar Observables com just( ) (consumir com Action)
--> Exercício 02 : Criar Observables com from( ) (consumir com Action)
--> Exercício 03 : Criar Observables com fromCallable( ) (consumir com Observer)
--> Exercício 04 : Criar Observables com factory method (Range)
+- -> Exercício 16 : consumir a primeira página da lista de personagens
+- -> Exercício 17 : para um dado personagem aleatório, encontrar os filmes onde ele atua
+- -> Exercício 18 : para um dado filme aleatório, encontrar os personagens que dele participam
 
-// Operadores e Marble Diagrams
-
--> Exercício 05 : map( )
--> Exercício 06 : filter( )
--> Exercício 07 : reduce( )
--> Exercício 08 : collect( )
--> Exercício 09 : amb( )
--> Exercício 10 : take( )
--> Exercício 11 : concat( )
--> Exercício 12 : merge( )
--> Exercício 13 : flatmap( )
-
-// Schedulers
-
--> Exercício 14 : subscribeOn()
--> Exercício 15 : subscribeOn() + observeOn()
--> Exercício 16 : operador interval( )
-
-// STAR WARS REST API
-
--> Exercício 16 : consumir a primeira página da lista de personagens
--> Exercício 17 : para um dado personagem aleatório, encontrar os filmes onde ele atua
--> Exercício 18 : para um dado filme aleatório, encontrar os personagens que dele participam
-
+License:
