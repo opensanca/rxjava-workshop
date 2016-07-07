@@ -5,6 +5,9 @@ import rx.functions.Action1;
 
 /**
  * Created by ubiratansoares for RxJava Workshop.
+ *
+ * An inocent usage of Observables
+ *
  */
 
 public class HelloObservables {
