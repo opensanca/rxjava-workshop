@@ -17,13 +17,12 @@
  - [Intellij Idea 16](https://www.jetbrains.com/idea/download/)
  - [JDK 8 u91](http://www.oracle.com/technetwork/pt/java/javase/downloads/jdk8-downloads-2133151.html)
  
-**Para quem não possui licença do Intellij Idea, existem dois caminhos:**
+**Para quem não possui licença do Intellij Idea:**
 - a) Instale a versão Ultimate no modo Trial que irá lhe conceder direito de uso por 30 dias que é o necessário para o workshop.
 - b) Instale a versão Ultimate no modo Students, você pode tirar foto da sua carteirinha e enviar para eles que eles irão dar
-um licença por 12 meses para você, pode mandar foto de carteirinha do ano anterior que funciona também, segue o [link](https://www.jetbrains.com/idea/buy/#edition=discounts)
+um licença por 12 meses para você, pode mandar foto de carteirinha do ano anterior que funciona também, segue o [link](https://www.jetbrains.com/idea/buy/#edition=discounts).
 - b1) Se você possuir um e-mail com o dominio da universidade, basta colocar lá no formulário que chega dentro de 1 hora a licença no seu e-mail. 
-- c) Durante a trilha tem alguns amiguinhos "manolos" que podem lhe passar formas "alternativas" de como ter a licença. Abraços
-
+- c) Durante a trilha tem alguns amiguinhos "manolos" que podem lhe passar formas "alternativas" de como ter a licença. 
 
 #### EMENTA
 
