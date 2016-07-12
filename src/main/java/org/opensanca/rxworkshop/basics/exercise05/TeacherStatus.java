@@ -6,7 +6,7 @@ package org.opensanca.rxworkshop.basics.exercise05;
 
 public enum TeacherStatus {
 
-    SOSO,
+    EASY,
     REGULAR,
     HARD,
     KNIGHT
