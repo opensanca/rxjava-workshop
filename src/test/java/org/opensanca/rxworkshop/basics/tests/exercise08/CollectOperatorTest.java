@@ -1,6 +1,5 @@
 package org.opensanca.rxworkshop.basics.tests.exercise08;
 
-import org.assertj.core.api.Condition;
 import org.junit.Test;
 import org.opensanca.rxworkshop.basics.exercise05.ICMCTeachers;
 import org.opensanca.rxworkshop.basics.exercise05.TeacherMapper;
@@ -30,15 +29,11 @@ public class CollectOperatorTest {
                             }
                         });
 
-        Condition<CountHolder> expectedKnights = new Condition<CountHolder>() {
-            @Override public boolean matches(CountHolder value) {
-                return value.get() == 2;
-            }
-        };
+        Observable<Integer> count = knightsCount.map(CountHolder::get);
 
-        assertThat(knightsCount)
+        assertThat(count)
                 .completes()
-                .atLeastOneItem(expectedKnights);
+                .emits(2);
     }
 
 }

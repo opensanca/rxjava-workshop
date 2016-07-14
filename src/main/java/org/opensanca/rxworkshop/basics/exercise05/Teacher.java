@@ -7,15 +7,21 @@ package org.opensanca.rxworkshop.basics.exercise05;
 public class Teacher {
 
     String name;
+    ICMCDepartment department;
     TeacherStatus status;
 
-    public Teacher(String name, TeacherStatus status) {
+    public Teacher(String name, ICMCDepartment department, TeacherStatus status) {
         this.name = name;
+        this.department = department;
         this.status = status;
     }
 
     public String getName() {
         return name;
+    }
+
+    public ICMCDepartment getDepartment() {
+        return department;
     }
 
     public TeacherStatus getStatus() {

@@ -43,7 +43,7 @@ _** Se você possuir um e-mail com o dominio da universidade, basta colocar lá 
 -  Exercício 07 : **reduce( )**
 -  Exercício 08 : **collect( )**
 -  Exercício 09 : **amb( )**
--  Exercício 10 : **take( )**
+-  Exercício 10 : **groupBy( )**
 -  Exercício 11 : **concat( )**
 -  Exercício 12 : **merge( )**
 -  Exercício 13 : **flatmap( )**
