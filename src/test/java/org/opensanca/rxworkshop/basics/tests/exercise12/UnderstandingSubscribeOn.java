@@ -1,8 +1,8 @@
 package org.opensanca.rxworkshop.basics.tests.exercise12;
 
 import org.junit.Test;
-import org.opensanca.rxworkshop.basics.commom.ThreadUtils;
-import org.opensanca.rxworkshop.basics.exercise05.ICMCTeachers;
+import org.opensanca.rxworkshop.basics.util.ThreadUtils;
+import org.opensanca.rxworkshop.basics.icmc.ICMCTeachers;
 import rx.Observable;
 import rx.schedulers.Schedulers;
 
@@ -19,7 +19,7 @@ public class UnderstandingSubscribeOn {
                 .doOnNext(ThreadUtils::printFromThread)
                 .subscribe();
 
-        ThreadUtils.sleep(1000);
+        ThreadUtils.waitForResults(1000);
 
     }
 }

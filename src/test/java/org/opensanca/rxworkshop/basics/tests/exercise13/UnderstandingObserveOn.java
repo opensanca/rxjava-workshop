@@ -1,7 +1,7 @@
 package org.opensanca.rxworkshop.basics.tests.exercise13;
 
 import org.junit.Test;
-import org.opensanca.rxworkshop.basics.commom.ThreadUtils;
+import org.opensanca.rxworkshop.basics.util.ThreadUtils;
 import rx.Observable;
 import rx.schedulers.Schedulers;
 
@@ -20,7 +20,7 @@ public class UnderstandingObserveOn {
                 .doOnNext(integer -> ThreadUtils.printFromThread(integer * 10))
                 .subscribe();
 
-        ThreadUtils.sleep(1000);
+        ThreadUtils.waitForResults(1000);
     }
 
 }
