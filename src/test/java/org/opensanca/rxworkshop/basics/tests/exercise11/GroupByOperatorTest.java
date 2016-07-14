@@ -1,6 +1,5 @@
-package org.opensanca.rxworkshop.basics.tests.exercise09;
+package org.opensanca.rxworkshop.basics.tests.exercise11;
 
-import br.ufs.github.rxassertions.RxAssertions;
 import org.junit.Test;
 import org.opensanca.rxworkshop.basics.exercise05.ICMCDepartment;
 import org.opensanca.rxworkshop.basics.exercise05.ICMCTeachers;
@@ -10,6 +9,8 @@ import rx.Observable;
 import rx.observables.GroupedObservable;
 
 import java.util.Set;
+
+import static br.ufs.github.rxassertions.RxAssertions.assertThat;
 
 /**
  * Created by ubiratansoares for RxJava Workshop.
@@ -30,7 +31,7 @@ public class GroupByOperatorTest {
                 ((group.getKey() == ICMCDepartment.SSC)) ?
                         group.asObservable() : Observable.empty());
 
-        RxAssertions.assertThat(onSSC).completes().emissionsCount(1);
+        assertThat(onSSC).completes().emissionsCount(1);
 
     }
 }

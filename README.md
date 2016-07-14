@@ -42,16 +42,15 @@ _** Se você possuir um e-mail com o dominio da universidade, basta colocar lá 
 -  Exercício 06 : **filter( )**
 -  Exercício 07 : **reduce( )**
 -  Exercício 08 : **collect( )**
--  Exercício 09 : **amb( )**
--  Exercício 10 : **groupBy( )**
--  Exercício 11 : **concat( )**
--  Exercício 12 : **merge( )**
--  Exercício 13 : **flatmap( )**
+-  Exercício 09 : **concat( )**
+-  Exercício 10 : **flatmap( )**
+-  Exercício 11 : **groupBy( )**
 
 #####  Schedulers
--  Exercício 14 : **subscribeOn( )**
--  Exercício 15 : **subscribeOn( ) + observeOn( )**
--  Exercício 16 : **operador interval( )**
+-  Exercício 12 : Entendendo **subscribeOn( )**
+-  Exercício 13 : Entendendo **observeOn( )**
+-  Exercício 14 : Entendendo  **Schedulers** com _factory methods_
+-  Exercício 15 : Vendo **merge( )** na prática
 
 #####  STAR WARS REST API
 -  Exercício 16 : consumir a primeira página da lista de personagens
