@@ -1,7 +1,8 @@
 package org.opensanca.rxworkshop.basics.tests.exercise01;
 
 import org.junit.Test;
-import org.opensanca.rxworkshop.basics.exercise01.HelloObservables;
+import rx.Observable;
+import rx.functions.Action1;
 
 /**
  * Created by ubiratansoares for RxJava Workshop.
@@ -10,6 +11,11 @@ import org.opensanca.rxworkshop.basics.exercise01.HelloObservables;
 public class HelloObservablesTest {
 
     @Test public void run() {
-        new HelloObservables().helloRxJava();
+        Observable.just("Hello", "RxJava")
+                .subscribe(new Action1<String>() {
+                    @Override public void call(String s) {
+                        System.out.println(s);
+                    }
+                });
     }
 }
