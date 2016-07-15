@@ -55,8 +55,17 @@ O objetivo desse exercício é verificar que alguns _factory methods_ que retorn
 
 ### Exercício 15
 
-De posso dos conhecimento de **Schedulers**, vamos verificar o comportamento do operadores **merge( )** para sequências que emitem itens em intervalos aleatórios no tempo.
+De posso dos conhecimento de **Schedulers**, vamos visualizar o comportamento do operador **merge( )** , usando para isso duas sequências que emitem itens em intervalos aleatórios no tempo.
 
 ### Exercícios 16, 17 e 18
 
 Nesses exercícios, nós iremos consumir uma REST API com o framework Retrofit. Esse framework oferece uma maneira muito simples de se consumir REST em Java, e em particular, ele é capaz de adaptar o consumo de uma chamada HTTP assíncrona no formato de um Observable.
+
+Para os exercícios 16 e 17, os métodos necessários já estão modelados já classe **StarWarsAPI**. 
+
+O exercício 16 executa uma consulta trivial. Já no exercício 17, iremos encadear uma consulta de modo assíncrono com o operador **flatMap**.
+
+Para o exercício 18, você deverá adicionar os métodos necessários na classe **StarWarsAPI**, de maneira a conseguir construir executar a consulta proposta. 
+
+- [Link](http://square.github.io/retrofit) para documentação de Retrofit2
+- [Link](https://swapi.co) para documentação de API do Star Was
