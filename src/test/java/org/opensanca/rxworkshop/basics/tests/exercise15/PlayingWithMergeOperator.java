@@ -1,14 +1,10 @@
 package org.opensanca.rxworkshop.basics.tests.exercise15;
 
 import org.junit.Test;
-import rx.Observable;
-import rx.schedulers.Schedulers;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
-
-import static br.ufs.github.rxassertions.RxAssertions.assertThat;
 
 /**
  * Created by ubiratansoares for RxJava Workshop.
@@ -21,16 +17,10 @@ public class PlayingWithMergeOperator {
         List<String> sp = Arrays.asList("Corinthians", "Palmeiras", "Santos");
         List<String> rj = Arrays.asList("Flamengo", "Vasco", "Botafogo");
 
-        Observable<String> merged = Observable.merge(
-                Observable.from(sp)
-                        .subscribeOn(Schedulers.computation())
-                        .doOnNext(this::printAndSleep),
-                Observable.from(rj)
-                        .subscribeOn(Schedulers.io())
-                        .doOnNext(this::printAndSleep)
-        );
-
-        assertThat(merged).completes();
+        // TODO
+        // Create observable sequence that prints SP teams at random intervals
+        // Create observable sequence that prints RJ teams at random intervals
+        // Apply merge to these sequences
 
     }
 
@@ -40,8 +30,9 @@ public class PlayingWithMergeOperator {
     }
 
     private void randomSleep() {
+        int randomWaiting = 3;
         Random random = new Random();
-        long randomTime = (random.nextInt(3) + 1) * 1000;
+        long randomTime = (random.nextInt(randomWaiting)) * 1000;
         try {
             Thread.sleep(randomTime);
         } catch (InterruptedException e) {
