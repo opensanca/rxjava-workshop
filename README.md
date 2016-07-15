@@ -30,6 +30,8 @@ _** Se você possuir um e-mail com o dominio da universidade, basta colocar lá 
 
 ## Contéudo Prático
 
+Um guia mais detalhado para cada um dos exercícios está [aqui](GUIDE.md)
+
 ##### Básico de Observables e Observers
 -  Exercício 01 : Criar Observables com **just( )** e consumir com **Action1**
 -  Exercício 02 : Criar Observables com **from( )** e consumir com **Observer**
