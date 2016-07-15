@@ -13,7 +13,7 @@ import java.util.List;
 
 public class PlayingWithObservers {
 
-    @Test public void creationWithParameter() {
+    @Test public void consumeWithObservers() {
 
         Observable<String> create = Observable.fromCallable(() -> "Open Sanca");
 
@@ -33,9 +33,10 @@ public class PlayingWithObservers {
 
     }
 
-    @Test public void creationWithCollection() {
+    @Test public void consumeWithActions() {
 
         List<String> openSancaFacts = Arrays.asList("Open", "Sanca", "Rules");
+
         Observable<String> source = Observable.from(openSancaFacts);
         source.subscribe(
                 System.out::println,
